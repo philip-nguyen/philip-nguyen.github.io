@@ -1,0 +1,68 @@
+body {
+  background: rgb(3,75,209);
+  background: linear-gradient(45deg, rgba(3,75,209,0.6965161064425771) 0%, rgba(205,214,217,0.9934348739495799) 47%, rgba(8,193,244,0.458420868347339) 100%);
+  background-attachment: fixed;
+}
+
+#intro {
+  margin-bottom: 10px;
+}
+
+#job-title {
+  margin-bottom: 0px;
+}
+
+#name {
+  font-size: 80px;
+  margin-top: 0px;
+}
+
+#profile-pic {
+  width: 200px;
+  height: 180px;
+  object-fit: cover;
+}
+
+#resume {
+  justify-content: right;
+}
+
+.info-node {
+  margin-bottom: 50px !important;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

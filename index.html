@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" >
+    <link rel="stylesheet" type="text/css" href='theme.css' />
+    <meta
+      name="description"
+      content="Portfolio web site created in hopes to get that bag"
+    />
+    <title>Philip Nguyen</title>
+  </head>
+  <body>
+    
+    <div class="ui grid container"> <!-- Grid Container -->
+      
+        <div class="two wide column"></div><!-- Left margin -->
+        <div class="twelve wide column"><!-- Content -->
+          <div class="ui row"> <!-- Nav bar -->
+            <div class="ui text menu">
+              <a class="ui item" href="#content">Home</a>
+              <a class="ui item" href="#experience">Experience</a>
+              <a class="ui item" href="#projects">Projects</a>
+            </div>
+          </div>
+
+          <div class="ui row info-node"> <!-- Intro -->
+            <div class="intro"> 
+              <div class="ui grid">
+                <div class="ten wide column">
+                  <h5 id="job-title">Software Engineer</h5>
+                  <h1 class="ui large header" id="name">Philip Nguyen</h1>
+                  <button class="ui teal button" id="contact-button">Say Hi</button>
+                  <a href="resources/resume2020wppqt.pdf" class="ui blue basic button" id="resume" target="_blank">Resume</a>
+                  <!-- Email Modal -->
+                  <div id="email-modal" class="modal"> 
+                    <div class="modal-content">
+                      <i class="close icon"></i>
+                      <form action="mailto:philip.nguyen@sjsu.edu" method="post" enctype="text/plain">
+                        
+                        <div class="ui form">
+                          <div class="field">
+                            <h2>Contact Me</h2>
+                          </div>
+                          <div class="two fields">
+                            <div class="field">
+                              <label>First Name *</label>
+                              <input type="text" placeholder="First Name" name="first-name" required>
+                            </div>
+                            <div class="field">
+                              <label>Last Name *</label>
+                              <input type="text" placeholder="Last Name" name="last-name" required>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label>Email Address *</label>
+                            <input type="text" placeholder="pnguyen@email.com" name="email" required>
+                          </div>
+                          <div class="field">
+                            <label>Subject *</label>
+                            <input type="text" placeholder="Subject" name="subject" required>
+                          </div>
+                          <div class="field">
+                            <label>Message *</label>
+                            <textarea placeholder="Hi Philip! ..."></textarea>
+                          </div>
+                          <input class="ui teal button send" type="submit" value="Send">
+                        </div>
+                      </form>
+                      
+                    </div>
+                  </div>
+                  <!-- Email script -->
+                  <script src="email.js"></script>
+                </div>
+                <div class="six wide column">
+                  <img class="ui massive circular image" id="profile-pic" alt="PN Profile Pic" src="resources/Nguyen_Philip.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui row info-node"> <!-- Description -->
+            <div class="">
+              <div class="description">
+                <h2 class="header">Background</h2>
+                <p>Hello! I'm a <strong>software engineer</strong> 
+                  with a B.S. in software engineering from <strong>San José State University</strong>
+                  and currently working on my M.S. in software engineering as well.
+                  I expect to graudate in Dec 2021. I have industry experience as 
+                  a <strong>backend developer</strong> and have worked on numerous projects as a front end developer.
+                  I am a detail-oriented problem solver that enjoys collaborative environments consisting of
+                  passionate individuals to make creative and robust solutions.</p>
+                <p><strong>When I'm not studying or working</strong>, I'm probably working out, learning guitar, learning a language,
+                playing video games, or spending time with friends and family online.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui row"><!-- Experience and Projects -->
+            <h2 class="header" id="experience">Experience</h2>
+            <div class="ui items">
+              <div class="item info-node">
+                <div class="ui grid container">
+                  <div class="eight wide column">
+                    <a class="ui header" href="https://datacare.com/" target="_blank">DataCare Corporation</a>
+                    <a href="https://datacare.com/"><i class="black external alternate small icon"></i></a>
+                    <div class="sub header">Associate Software Engineer</div>
+                    <div class="meta">June 2019 - October 2020</div>
+                  </div>
+                  <div class="eight wide column description">
+                    <p>I <strong>streamlined end user business logic and workflows</strong> on the web application
+                      platform, Ahshay!, that reduced help desk emails regarding workflow information.
+                      I worked in a Linux environment to write robust and well-documented backend code 
+                      in <strong>PHP, Javascript, MySQL, HTML and CSS</strong> in a test driven development process.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ui divider"></div>
+
+              <h2 class="header" id="projects">Projects</h2>
+              <div class="item info-node">
+                <div class="ui grid container">
+                  <div class="eight wide column">
+                    <a class="ui header" href="https://github.com/philip-nguyen/wildfire-cloud" target="_blank">Wildfire Prediction Platform</a>
+                    <a href="https://github.com/philip-nguyen/wildfire-cloud"><i class="black github icon"></i></a>
+                    <div class="meta">Frontend Developer</div>
+                    <div class="meta">October 2020 - December 2020</div>
+                  </div>
+                  <div class="eight wide column description">
+                    <p>Created a front-end module to access a machine learning module for wildfire detection in
+                      satellite images. Developed with <strong>ReactJS and NodeJS</strong>. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="ui divider"></div>
+
+              <div class="item info-node">
+                <div class="ui grid container">
+                  <div class="eight wide column">
+                    <a class="ui header" href="https://github.com/philip-nguyen/Stock-Portfolio" target="_blank">Stock Portfolio</a>
+                    <a href="https://github.com/philip-nguyen/Stock-Portfolio"><i class="black github icon"></i></a>
+                    <div class="meta">Frontend Developer</div>
+                    <div class="meta">November 2020 - December 2020</div>
+                  </div>
+                  <div class="eight wide column description">
+                    <p>Developed a stock calculator program that helped map investments to different stocks based on
+                      different investment strategies. The application was developed with <strong>Python</strong> and
+                      utilized the yfinance API. The GUI was implemented with <strong>PyQt5</strong>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="ui divider"></div>
+
+              <div class="item info-node">
+                <div class="ui grid container">
+                  <div class="eight wide column">
+                    <div class="ui header">BumbleBee RC Rover</div>
+                    <div class="meta">Software Engineer</div>
+                    <div class="meta">Nov 2017 - Dec 2017</div>
+                  </div>
+                  <div class="eight wide column description">
+                    <p>I programmed the remote controller for an RC rover that utilized gyroscopic input
+                      to determine the movement of the rover. I used an <strong>Arduino board and C</strong> programming.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="ui divider"></div>
+
+              <div class="item info-node">
+                <div class="ui grid container">
+                  <div class="eight wide column">
+                    <div class="ui header">Cloud Digital Audio Workstation</div>
+                    <div class="meta">Software Developer</div>
+                    <div class="meta">Dec 2020 - Present</div>
+                  </div>
+                  <div class="eight wide column description">
+                    <p>For my senior project I plan to create a lightweight cloud solution of a digital audio workstation.
+                      (The tool music producers use). I aim to use <strong>Flask and Python</strong> libraries to develop the music software.
+                      Stay tuned where this goes!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="ui divider"></div>
+
+            </div>
+            
+          </div>
+          
+        </div>
+        <div class="two wide column"></div><!-- Right margin -->
+      
+    </div> <!-- Grid Container End-->
+  </body>
+</html>
