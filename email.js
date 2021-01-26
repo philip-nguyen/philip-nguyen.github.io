@@ -24,3 +24,15 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// This function is for if I sign up for emailJS
+// <script src="https://smtpjs.com/v3/smtp.js"></script>
+function sendEmail() {
+  var fname = document.getElementsByName("first-name")[0];
+  var lname = document.getElementsByName("last-name")[0];
+  var email = document.getElementsByName("email")[0];
+
+  sendEmail.send({
+    Host: "smtp.gmail.com",
+  })
+}
