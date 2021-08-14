@@ -161,7 +161,7 @@
 }
 .pic2 {
   /* The image used */
-  background-image: url("resources/osaka.JPG");
+  background-image: url("resources/osaka.jpg");
 
   /* Set a specific height */
   min-height: 600px;
@@ -187,7 +187,7 @@
 }
 .pic4 {
   /* The image used */
-  background-image: url("resources/clouds.JPG");
+  background-image: url("resources/clouds.jpg");
 
   /* Set a specific height */
   height: 100vh;
