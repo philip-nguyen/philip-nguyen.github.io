@@ -1,68 +1,200 @@
-body {
-  background: rgb(3,75,209);
-  background: linear-gradient(45deg, rgba(3,75,209,0.6965161064425771) 0%, rgba(205,214,217,0.9934348739495799) 47%, rgba(8,193,244,0.458420868347339) 100%);
-  background-attachment: fixed;
+.header-p {
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  position: relative;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.5rem;
 }
 
-#intro {
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.header-name {
+  font-size: 2rem;
+}
+
+.header-divider {
+  width: 15rem;
+  margin-top: 8px;
   margin-bottom: 10px;
 }
 
-#job-title {
-  margin-bottom: 0px;
+.header-title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#name {
-  font-size: 80px;
-  margin-top: 0px;
+.navbar {
+  background: transparent;
+  background-color:rgb(4, 1, 179);
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  
+  z-index: 1;
 }
 
-#profile-pic {
-  width: 200px;
-  height: 180px;
-  object-fit: cover;
+.navbar li {
+  display: inline;
+  padding: 5px 10px;
 }
 
-#resume {
-  justify-content: right;
-}
-
-.info-node {
-  margin-bottom: 50px !important;
-}
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
+.navbar a {
+  color: white;
   text-decoration: none;
-  cursor: pointer;
+  font-size: 1.5em;
+  padding: 5px 10px;
+  
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  
+}
+
+.profile-pic {
+  padding-bottom: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.skill-section {
+  background-color: rgb(146, 204, 204);
+}
+
+.skills {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.intro {
+  background-color: azure;
+
+}
+
+.info {
+  padding: 0.8rem;
+}
+
+.project {
+  background:rgb(219, 219, 219);
+  
+}
+
+.item {
+  margin-left: auto!important;
+  margin-right: auto!important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.extra-top {
+  padding-top: 3rem;
+}
+
+.background {
+  position: relative;
+  text-align: center;
+  
+  margin-right: auto;
+}
+
+.description {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  
+  margin-top: 50%;
+}
+
+.connect {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.send {
+  margin-left: 50%!important;
+}
+
+.field {
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.pic1 {
+  /* The image used */
+  background: linear-gradient(rgba(250, 247, 247, 0.5), rgba(13, 12, 122, 0.93)), url("resources/yosemite.JPG");
+
+  /* Set a specific height */
+  height: 97.5vh;
+  width: 100vw;
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pic2 {
+  /* The image used */
+  background-image: url("resources/osaka.JPG");
+
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pic3 {
+  /* The image used */
+  background-image: url("resources/uji.JPG");
+
+  /* Set a specific height */
+  min-height: 50%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pic4 {
+  /* The image used */
+  background-image: url("resources/clouds.JPG");
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
